@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- El padding se utiliza para generar espacio alrededor de un contenido, pero en su interior, dentro de sus bordes.
+    La principal diferencia con entre el padding y el margen es que el margen ocurre fuera del elemento, en los alrededores
+    mientras que en padding tiene lugar dentro del elemento, entre el contenido y sus bordes. 
+    De forma parecida a las propiedades margen tenemos las propiedades padding: 
+
+    
+    padding-top: padding superior
+    padding-bottom: padding inferior
+    padding-left: padding izquierdo
+    padding-right: padding derecho  
+
+    shorthand es cuando ponemos solo:
+    padding:
+-->
+
+    <style>
+        #parrafo7{
+            padding: 50px 100px 150px 25px; /* top, right, bottom, left*/
+            border: 1px solid #0026ff;
+        }
+        #parrafo8{
+            padding: 50px 100px 25px; /* 50px aplica a top, 100px aplica a left y right, 25px aplica a bottom*/
+        }
+        #parrafo9{
+            padding: 50px 100px; /* 50px aplica a top y bottom, 100px aplica a left y right*/
+        }
+        .p-padding{
+            padding-top:5px;
+            padding-left:8px;
+            padding-right: 8px;
+            padding-bottom: 5px;
+        }
+        .chocolate{
+            color:chocolate;
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="parrafo1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maiores sunt sit libero laborum provident.</p>
+
+
+    <!-- Podemos utilizar el atajo padding, que nos permite especificar los 4 lados en una misma propiedad: -->
+
+    <p id="parrafo7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illum adipisci tempora veritatis sapiente eveniet.</p>
+    <p id="parrafo8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illum adipisci tempora veritatis sapiente eveniet.</p>
+    <p id="parrafo9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam illum adipisci tempora veritatis sapiente eveniet.</p>
+    <p class="p-padding chocolate">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores ratione officia illum accusantium obcaecati tempore animi consectetur, dolores reiciendis corrupti nulla eum optio velit labore? Eius, ratione. Placeat nisi expedita dicta dolore ex recusandae aliquam voluptatem, labore suscipit excepturi libero?</p>
+
+</body>
+</html>

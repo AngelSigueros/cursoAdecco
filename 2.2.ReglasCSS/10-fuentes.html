@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!-- 
+    Cuando hablamos de fuentes nos referimos a la tipografía utilizada para los textos de la web.
+    Una fuente clara y legible es importante de cara a favorecer una mejor experiencia de usuario 
+    y también para establecer mayor poder de marca en el sitio web que estamos desarrollando.
+
+    En CSS existen 5 familias de fuentes genéricas: 
+    1. serif: fuentes con un pequeño trazo en los bordes de cada letra. Inspiran formalidad y elegancia.
+        "Times New Roman"
+        Georgia
+        Garamond
+    2. sans-serif: fuentes con líneas limpias, sin trazos. Inspiran sensación minimalista y moderna.
+        Arial
+        Verdana
+        Helvetica
+    3. monospace: fuentes cuyas letras tienen todas el mismo ancho, dando una sensación de mecanografiado.
+        "Courier New"
+        "Lucida Console"
+        Monaco
+    4. cursive: fuentes que imitan la escritura humana.
+        "Brush Script MT"
+        "Lucida Handwriting"
+    5. fantasy: fuentes de tipo decorativo.
+
+    Nota: aquellas compuestas por más de una palabra se utilizan con comillas.
+
+    Para definir una fuente utilizamos la propiedad CSS font-family.
+    
+    La propiedad font-family especifica una lista de fuentes, desde la prioridad más alta
+    a la más baja. Se declara de la siguiente manera: 
+
+    font-family: fuente1, fuente alternativa, familia de fuente genérica.
+
+    Ejemplo:
+
+    font-family: Arial, Helvetica, sans-serif
+
+-->
+
+<style>
+
+    /* La estructura es: 
+    1. Primero se pone la fuente que queremos
+    2. A continuación la fuente o fuentes alternativas en caso de que el navegador no pueda cargar la primera fuente
+    3. Por último especificamos la familia genérica a la que pertenecen las fuentes (serif, sans-serif, monospace, cursive o fantasy)
+    */
+    #parrafo1{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #parrafo2{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #parrafo3{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    body{
+        font-family:'Courier New', Courier, monospace;
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    section p{
+        font-size: 30px;
+    }
+    /* Una vez definida el tipo de fuente, podemos modificar sus características:
+    font-weight
+    font-size: pixel, em, rem, %, vw*/
+
+    #parrafo4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:40px; /* Ejemplo en píxeles */
+        font-weight: 700;
+    }
+    /* The default text size in browsers is 16px 
+    16px equivalen a 1em
+    haciendo el cálculo sabemos que 40px/16=2.5 */
+    #parrafo5{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.5em; /* Ejemplo en em */
+        font-weight: 700;
+    }
+
+    #parrafo6{
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+
+</head>
+<body>
+
+    <h1>Hola mundo</h1>
+
+    <h2>Hasta luego</h2>
+
+    <p>Párrafo original, sin modificar la fuente, para ver las diferencias con diferentes fuentes.</p>
+
+    <p id="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptates.</p>
+
+    <p id="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptates.</p>
+
+    <p id="parrafo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptates.</p>
+
+    <p id="parrafo4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptates.</p>
+
+    <p id="parrafo5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptates.</p>
+
+    <p id="parrafo6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptates.</p>
+
+
+</body>
+</html>

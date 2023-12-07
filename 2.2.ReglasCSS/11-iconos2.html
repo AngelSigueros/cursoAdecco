@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ==" crossorigin="anonymous"></script>
+
+    <style>
+
+        button{
+            font-size: 55px;
+            padding:10px;
+        }
+    </style>
+
+<script>
+    function fVer() {
+        console.log(document.getElementById('but1').style.visibility);
+        let img1 = document.getElementById('but1');
+        if (img1.style.visibility === 'visible') {
+            img1.style.visibility = 'visible';
+        } else {
+            img1.style.visibility = 'hidden';
+        }
+    }
+
+    function fVer2() {
+        console.log(document.getElementById('but2').style.display);
+        let img1 = document.getElementById('but2');
+        if (img1.style.display === 'block') {
+            img1.style.display = 'none';
+        } else {
+            img1.style.display = 'block';
+        }
+    }
+
+    function showPassword() {
+        let passInput = document.getElementById('pass');
+        if (passInput.type === 'password') {
+            passInput.type = 'text';
+        } else {
+            passInput.type = 'password';
+        }
+    }
+
+
+    function toggleImage() {
+        let image = document.getElementById('retrete');
+        if(image.style.display === 'none') {
+            image.style.display = 'block';
+        } else {
+            image.style.display = 'none';
+        }
+
+        console.log(document.getElementById('but2').style.display);
+        let img1 = document.getElementById('but2');
+        if (img1.style.display === 'none') {
+            img1.style.display = 'block';
+        } else {
+            img1.style.display = 'none';
+        }
+    }
+</script>
+</head>
+<body>
+    <div id="but1">
+    <button type="button" id="" style="visibility: visible" onclick="fVer()">
+        <i class="fas fa-volleyball-ball"></i>
+    </button>
+    </div>
+    <br>Adios
+    <div id="but2">
+    <button type="button" style="display: block" onclick="fVer2()">
+        <i class="fas fa-volleyball-ball"></i>
+    </button>
+    </div>
+    <label for="pass">Contraseña</label>
+            <input type="password" name="pass" id="pass">
+    <button type="button" onclick="showPassword()">Mostrar password</button>
+
+
+    <button onclick="toggleImage()">
+        <i class="fa-solid fa-poo"></i>
+        Ir al baño
+    </button>
+
+    <img id="retrete" style="display: none; max-width: 300px;" src="img/retrete.webp" alt="No aguanto mas">
+    
+
+
+</body>
+</html>

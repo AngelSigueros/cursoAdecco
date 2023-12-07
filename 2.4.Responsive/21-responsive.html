@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<!-- A través de Media Queries podemos especificar que ciertos estilos 
+    apliquen sólo en las resoluciones deseadas, ejemplo de resoluciones más comunes:  -->
+
+    <style>
+
+
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 576px) {
+        .test{
+            color: green;
+        }
+    }
+
+    /* Small devices (portrait tablets and large phones, 576px and up) */
+    @media only screen and (min-width: 576px) {
+        .test{
+            color: red;
+        }
+    }
+    
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        .test{
+            color: magenta;
+        }
+    }
+    
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        .test{
+            color: blue;
+        }
+    }
+    
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        .test{
+            color: orange;
+        }
+    } 
+</style>
+</head>
+<body>
+    
+
+    <p class="test">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, eum.</p>
+
+    <!-- Imagen no responsive, no se adapta al ancho de la pantalla -->
+    <img src="img/material.png">
+
+    <br>
+    <hr>
+
+    <!-- Imagen responsive, se adapta al ancho de la pantalla -->
+    <img src="img/material.png" style="width:100%;"> 
+
+
+    <!-- Algunos gestores de contenidos (CMS) como por ejemplo Wordpress
+    muestran diferentes imágenes en función del ancho de la pantalla, es decir,
+    NO adaptan la misma imagen al ancho, si no que utilizan diferentes versiones de la misma imagen -->
+
+    <picture>
+        <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+        <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+        <source srcset="flowers.jpg">
+        <img src="img_smallflower.jpg" alt="Flowers">
+      </picture> 
+</body>
+</html>

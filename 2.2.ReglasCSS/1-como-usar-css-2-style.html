@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Forma 1 de cómo utilizar CSS dentro de un documento HTML: 
+    mediante la etiqueta style podemos introducir dentro el código CSS -->
+    <style>
+
+
+        /* Refactorización: reducir la complejidad de un código con el fin de: 
+        reducir su deuda técnica
+        mejorar su legibilidad
+        mejorar su mantenibilidad
+        hacerlo más sencillo
+        el código sigue haciendo la misma funcionalidad, no hace nada nuevo, es lo mismo
+
+         */
+        /* Minificar: optimizar el peso del código a base de reducir todos aquellos elementos innecesarios,
+        agrupar reglas etc etc */
+
+        /* Ofuscación: conjunto de técnicas encaminadas a reducir legilibilidad del código con el fin de 
+        que no pueda ser interpretado por una persona */
+
+        /* Selector Id: un solo elemento */
+        #email{
+            color:rgb(0, 255, 55);
+        }
+
+        /* Selector clase: más de un elemento, solo los que tengan la clase como atributo*/ 
+        .red{
+            color:red;
+        }
+
+        /* Selector etiqueta: todos los elementos de esa etiqueta html */
+        h1 {
+            color: steelblue;
+            font-size: 50px;
+        }
+
+        p {
+            color: chocolate;
+        }
+
+        h2 {
+            color: blue;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>Encabezado h1</h1>
+    <p>Esto es un párrafo</p>
+    <h2>Ejemplo título h2</h2>
+
+    <a id="email" href="mailto:alan@alansastre.co">alan@alansastre.co</a>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, quia!</p>
+    <p class="red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, quia!</p>
+    <p class="red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga, quia!</p>
+
+</body>
+
+</html>

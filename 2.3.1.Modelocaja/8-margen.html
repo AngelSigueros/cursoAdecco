@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Los márgenes nos permiten establecer espacios alrededor de cada elemento, fuera de sus bordes.
+    Con los márgenes logramos dar espacio entre los elementos para una mejor visualización.
+    Existen 4 tipos de márgenes:
+    margin-top: margen superior
+    margin-bottom: margen inferior
+    margin-left: margen izquierdo
+    margin-right: margen derecho 
+
+    Ejemplos
+
+    Podemos modificar cada margen utilizando la propiedad correspondiente, o también 
+    podemos modificar los márgenes desde una única propiedad -->
+
+    <style>
+        #parrafo1{
+            margin: 50px 100px 150px 25px; /* top, right, bottom, left*/
+            border: 1px solid #0026ff;
+        }
+        .p-margin{
+            margin-top:200px;
+            margin-left:300px;
+            margin-right: 100px;
+            margin-bottom: 50px;
+        }
+        #parrafo4{
+            margin: 50px 100px 25px; /* 50px aplica a top, 100px aplica a left y right, 25px aplica a bottom*/
+        }
+        #parrafo5{
+            margin: 50px 100px; /* 50px aplica a top y bottom, 100px aplica a left y right*/
+        }
+    </style>
+</head>
+<body>
+    
+    <p id="parrafo1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maiores sunt sit libero laborum provident.</p>
+    <p class="p-margin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maiores sunt sit libero laborum provident.</p>
+    <p class="p-margin">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maiores sunt sit libero laborum provident.</p>
+
+    <p id="parrafo4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maiores sunt sit libero laborum provident.</p>
+    <p id="parrafo5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maiores sunt sit libero laborum provident.</p>
+
+
+
+</body>
+</html>

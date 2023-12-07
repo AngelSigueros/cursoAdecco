@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Cajas de texto */
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        /* Selectores */
+        select {
+            width: 100%;
+            padding: 30px 30px;
+            
+            border-radius: 100px;
+            background-color: #f1f1f1e7;
+        }
+
+        /* Botones de formularios */
+        input[type=button],
+        input[type=submit],
+        input[type=reset] {
+            background-color: chocolate;
+            
+            color: white;
+            padding: 16px 32px;
+            text-decoration: underline;
+            margin: 14px 20px;
+            cursor: copy;
+        }
+        main{
+            width: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+<main>
+    <form>
+        Nombre
+        <input type="text" name="first-name"><br>
+    
+        Apellido
+        <input type="text" name="last-name">
+
+        <input type="submit" value="Enviar">
+      </form>
+      <br>
+      <hr>
+
+
+      <h2>---- Formulario con elemento select</h2>
+
+      <form action="/action_page.php" method="POST">
+    
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" value="Mondeo"><br>
+    
+        <label for="cars">Seleccionar fabricante:</label>
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+      </form>
+      <br>
+      <hr>
+    </main>
+</body>
+
+</html>

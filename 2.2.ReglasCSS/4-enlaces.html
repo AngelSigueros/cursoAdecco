@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Un enlace <a> tiene asociados 4 estados: 
+    link: estado por defecto cuando el link nunca ha sido pulsado
+    visited: estado cuando el link ha sido pulsado al menos una vez
+    hover: estado cuando el ratón pasa por encima del enlace
+    active: estado que tiene en el momento de ser pulsado -->
+
+
+    <style>
+
+        a {
+            font-size: 28px;
+        }
+
+        /* estados */
+        #enlace1:link{
+            color: darkgreen;
+        }
+
+        #enlace1:visited{
+            color: violet;
+        }
+
+        #enlace1:hover{ /* Cuando pasamos el ratón por encima del elemento */
+            color: aqua;
+        }
+
+        #enlace1:active{
+            color: orange;
+        }
+
+        /*estilos más comunes, eliminar el subrayado y 
+        modificar la opacidad cuando se pasa por encima*/
+        #enlace2{
+            text-decoration: none;
+            color:blue;
+            transition: 0.9s;
+        }
+
+        .custom-link{
+            color:black;
+            text-decoration: none;
+            transition: 5s;
+        }
+        .custom-link:hover{
+            color: grey;
+        }
+        .margin50{
+            margin: 50px;
+        }
+
+        #enlace2:hover{
+            opacity: 0.2;
+        }
+        
+        /* aspecto de botón */
+        #enlace3{
+            background-color: #5656d8;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-decoration: none;
+            
+            border-radius: 10px;
+        }
+        #enlace3:hover{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2>1. Ejemplo cambio de color en base al estado</h2>
+    <a id="enlace1" href="https://www.google.es">Enlace1</a>
+
+    <br>
+    <hr>
+
+    <h2>2. Ejemplo con transición y opacidad</h2>
+    <a id="enlace2" href="https://www.google.es">Enlace2</a>
+
+    <br>
+    <hr>
+
+    <h2>3. Ejemplo con aspecto de botón</h2>
+    <a id="enlace3" href="https://www.google.es">Enlace3</a>
+    <a id="enlace3" href="https://www.google.es">Enlace3</a>
+    <a id="enlace3" href="https://www.google.es">Enlace3</a>
+    <a id="enlace3" href="https://www.google.es">Enlace3</a>
+
+    <h2>4. Ejemplo links custom con clases</h2>
+    <a class="custom-link" href="#">Enlace 1</a>
+    <p>Hola buenas</p>
+    <a class="custom-link margin50" href="#">Enlace 2</a>
+</body>
+</html>

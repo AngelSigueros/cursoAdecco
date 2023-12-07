@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+    Es común acompañar ciertos elementos como botones, enlaces, elementos de navegación con iconos 
+    que complementen su significado visual de manera que sea más sencillo y rápido identificar las posibles
+    acciones que se pueden realizar en una web. También se suelen utilizar cuando se describen características 
+    de un producto o servicio.
+
+    La librería de iconos más popular en la actualidad se llama Font Awesome:
+    https://fontawesome.com/
+
+    Podemos importar el link utilizando cdnjs buscando en: https://cdnjs.com/libraries/font-awesome
+
+    Se importa de la siguiente manera: -->
+
+    <script src="https://kit.fontawesome.com/d428f5a0ea.js" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js" integrity="sha512-F5QTlBqZlvuBEs9LQPqc1iZv2UMxcVXezbHzomzS6Df4MZMClge/8+gXrKw2fl5ysdk4rWjR0vKS7NNkfymaBQ==" crossorigin="anonymous"></script>
+        <style>
+            /* Estilo para botones: */
+
+            .btn{
+                font-size:20px;
+                color: white;
+                padding:5px;
+                border-radius: 3px;
+            }
+            .btn-info{
+                background-color:#0b5ed7;
+                border-color: #0b5ed7;
+            }
+            .btn-edit{
+                background-color:#157347;
+                border-color: #157347;
+            }
+            .btn-remove{
+                background-color:#bb2d3b;
+                border-color: #bb2d3b;
+            }
+        </style>
+</head>
+
+<body>
+
+    <!-- Buscamos los iconos deseados en: https://fontawesome.com/icons?d=gallery -->
+
+    <h2>Ejemplo de iconos</h2>
+    <i class="fas fa-eye"></i>
+    <i class="fas fa-edit"></i>
+    <i class="fas fa-trash-alt"></i>
+    <i class="fas fa-mountain"></i>
+    <br>
+    <hr>
+
+
+    <h2>Ejemplo de uso de botones con estilo CSS</h2>
+
+
+    <button class="btn btn-info">Ver 
+    </button>
+
+    <button class="btn btn-edit">Editar 
+    </button>
+
+    <button class="btn btn-remove">Eliminar 
+    </button>
+
+    <br>
+    <hr>
+
+    <h2>Ejemplo de uso de iconos dentro de botones con estilo CSS</h2>
+
+    <button class="btn btn-info">Ver 
+        <i class="fas fa-eye"></i>
+    </button>
+
+    <button class="btn btn-edit">Editar 
+        <i class="fas fa-edit"></i>
+    </button>
+
+    <button class="btn btn-remove">Eliminar 
+        <i class="fas fa-trash-alt"></i>
+    </button>
+
+</body>
+
+</html>

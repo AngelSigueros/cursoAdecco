@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            /* Con esto evitamos que los paddings añadidos a las columnas descuadren el contenido
+            Esto hace que el ancho total se ajuste teniendo en cuenta bordes y paddings */
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .main-header {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            overflow: hidden;
+            background-color: darkslategray;
+            padding: 20px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: darkslategray;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        a {
+            color: lightcoral;
+            text-decoration: none;
+            transition: 0.4s;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        /* Creación de columnas mediante propiedad float
+        Estos dos estilos solo aplican por encima de 768px */
+        .column1 {
+            float: left;
+            width: 75%;
+        }
+
+        .column2 {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        /* Necesario hacer esto después del contenedor de columnas para evitar solapar con los siguientes elementos */
+        main:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other 
+        
+        Este estilo solo aplicará por debajo de 768px*/
+        @media screen and (max-width: 768px) {
+
+            .column1,
+            .column2 {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        main{
+            padding: 50px;
+        }
+        article{
+            padding: 30px 0px;
+        }
+        .img-aside{
+            max-width: 100%;
+        }
+        aside{
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <h1>Listado de artículos</h1>
+    </header>
+    <nav>
+        <!-- El nav tam bién se suele incluir dentro de <header> -->
+        <a title="Página de inicio" href="#">Inicio</a>
+        <a title="Listado de pedidos realizados" href="#">Mis artículos</a>
+        <a title="Información de cuenta" href="#">Mi cuenta</a>
+        <a title="Cerrar la sesión" href="#">Cerrar sesión</a>
+    </nav>
+
+
+
+    <main>
+        <h2>Artículos de actualidad</h2>
+
+        <section class="column1">
+
+            <!-- Artículo 1 -->
+            <article>
+                <header>
+                    <h2>Estas son las ciudades españolas más baratas y más caras para pasar las vacaciones</h2>
+                    <p>Publicado el 4 septiembre 2020 por
+                        <a href="#">David García</a> - <a href="#">6 valoraciones</a>
+                    </p>
+                </header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ratione vero laborum consectetur beatae ad in voluptatibus libero rerum? Sapiente delectus tempora dolor mollitia magni! Illo incidunt officiis fugiat velit eum aliquam, doloremque adipisci omnis! Recusandae eius, quam dolor provident in praesentium inventore id suscipit laboriosam cum, magnam dolorem ducimus.</p>
+            </article>
+
+            <!-- Artículo 2 -->
+            <article>
+                <header>
+                    <h2>La forma más eficaz de desempañar los cristales del coche</h2>
+                    <p>Publicado el 4 septiembre 2020 por
+                        <a href="#">David García</a> - <a href="#">6 valoraciones</a>
+                    </p>
+                </header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ratione vero laborum consectetur beatae ad in voluptatibus libero rerum? Sapiente delectus tempora dolor mollitia magni! Illo incidunt officiis fugiat velit eum aliquam, doloremque adipisci omnis! Recusandae eius, quam dolor provident in praesentium inventore id suscipit laboriosam cum, magnam dolorem ducimus.</p>
+            </article>
+
+            <!-- Artículo 3 -->
+            <article>
+                <header>
+                    <h2>La forma más eficaz de desempañar los cristales del coche</h2>
+                    <p>Publicado el 4 septiembre 2020 por
+                        <a href="#">David García</a> - <a href="#">6 valoraciones</a>
+                    </p>
+                </header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ratione vero laborum consectetur beatae ad in voluptatibus libero rerum? Sapiente delectus tempora dolor mollitia magni! Illo incidunt officiis fugiat velit eum aliquam, doloremque adipisci omnis! Recusandae eius, quam dolor provident in praesentium inventore id suscipit laboriosam cum, magnam dolorem ducimus.</p>
+            </article>
+
+        </section>
+
+        <aside class="column2">
+
+            <h2>Contenido complementario</h2>
+            <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+                leo.</p>
+            <img class="img-aside" src="img/material.png">
+
+            <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend
+                leo.</p>
+            <img class="img-aside" src="img/material.png">
+
+        </aside>
+
+    </main>
+
+
+
+
+    <footer>
+        <p>&copy; 2020 Ejemplo de copyright </p>
+        <p><a href="mailto:hi@example.com">hi@example.com</a></p>
+    </footer>
+
+
+
+</body>
+
+</html>

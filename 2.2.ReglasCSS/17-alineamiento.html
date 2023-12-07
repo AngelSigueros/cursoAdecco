@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* Centrar elementos tipo block */
+        .center1{
+            margin: auto;
+            width: 50%;
+            border: 1px solid blue;
+            padding:10px;
+        }
+        .center2{
+            text-align: center;
+            border: 1px solid blue;
+            padding:10px;
+        }
+        .center3{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .center5{
+            float: right;
+            border: 2px solid blue;
+        }
+
+        .center6{
+            padding: 50px 100px; /* 50px aplica a top y bottom, 100px aplica a left y right */
+            border: 3px solid blue;
+        }
+        .center7{
+            padding: 50px 100px; /* 50px aplica a top y bottom, 100px aplica a left y right */
+            border: 3px solid blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- A la hora de colocar los elementos en el Layout surge la necesidad de
+    centrar horizontal y verticalmente los elementos. -->
+
+    <h2>1. Alinear horizontalmente</h2>
+
+
+
+    <h3>1.1 Centrar un elemento de tipo block</h3>
+
+    <div class="center1">
+        <h2>Título encabezado</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere quas voluptate, impedit harum consequuntur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, natus!</p>
+    </div>
+
+    <h3>1.2 Centrar texto</h3>
+    <div class="center2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere quas voluptate, impedit harum consequuntur.</p>
+    </div>
+
+    <h3>1.3 Centrar una imagen</h3>
+    <img class="center3" src="img/logo.png">
+
+    <h3>1.4 Centrar un elemento utilizando la propiedad position</h3>
+
+
+    <h3>1.5 Centrar un elemento utilizando la propiedad float</h3>
+
+    <p class="center5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim id pariatur atque, quis veniam accusamus omnis culpa corrupti ea dolorum?</p>
+    
+    <br>
+    <hr>
+
+    <h2>2. Alinear verticalmente</h2>
+
+    <h3>2.1 Alinear verticalmente utilizando la propiedad padding</h3>
+    <div class="center6">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatibus unde? Autem illo ratione odio.</p>
+      </div>
+
+      <h3>2.1 Alinear verticalmente y horizontalmente utilizando la propiedad padding y text-align</h3>
+      <div class="center7">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptatibus unde? Autem illo ratione odio.</p>
+        </div>
+
+    <h3>2.2 Alinear utilizando la propiedad line-height</h3>
+
+    
+    <h3>2.3 Alinear utilizando la propiedad transform</h3>
+
+
+
+</body>
+</html>

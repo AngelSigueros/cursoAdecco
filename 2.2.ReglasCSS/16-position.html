@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- La propiedad position nos permite especificar el tipo de método de posicionamiento:
+
+        static: método utilizado por defecto. No les afectan las propiedades: top, left, right, bottom
+        
+        relative: relativo a su posición, es decir, sí tiene en cuenta top, left, right, bottom
+        
+        absolute: posiciona un elemento en relación a su elemento padre más cercano
+
+        fixed: se queda fijado en el viewport, es decir, la zona visible por el usuario, estando siempre en el mismo lugar
+              
+        sticky: posiciona un elemento usando relative y fixed en función del scroll del usuario. Ejemplo barras de navegación que están en un sitio
+        pero cuando se hace scroll se desplazan con la pantalla
+    
+        Se dice que un elemento está posicionado cuando su propiedad position no es static
+    
+    -->
+    <style>
+        .main-element {
+            position: static; /* static es el valor por defecto para position*/
+            left: 10px; /* Como tiene static no le afecta left, bottom, top, right */
+            bottom: 10px;
+            background-color: blue;
+            padding: 10px;
+            color:white;
+        }
+        
+        .sibling-element {
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplo position static</h2>
+
+    <div>
+        <div class="sibling-element">
+            Sibling Element.
+        </div>
+        
+          <div class="main-element">
+            Main Element.
+        </div>
+        
+        <div class="sibling-element">
+            Sibling Element.
+        </div>
+      </div>
+
+</body>
+</html>

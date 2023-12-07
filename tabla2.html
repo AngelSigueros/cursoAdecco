@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="">
+
+    <h1>Datos:</h1>
+
+    <div id="datos"></div>
+
+    <div id="nombre"></div>
+
+    <div id="seleccion"></div>
+</body>
+
+<script>
+    console.log(window.location.href);
+    //document.getElementById("datos").innerHTML=localStorage.getItem("var");
+    //document.getElementById("datos").innerHTML=window.location.search.substring(0).split('=')[1];
+
+    /*
+    const params = 
+    new Map(document.location.search.slice(1).split('&').map(param => param.split('=')))
+    if(params.get("firstName")){
+        document.getElementById("nombre").innerHTML=params.get("firstName");
+    }
+    if(params.get("seleccion")){
+    document.getElementById("seleccion").innerHTML=params.get("seleccion");
+    }
+    */
+
+    document.getElementById("datos").innerHTML=new URL(location.href).searchParams;
+    document.getElementById("nombre").innerHTML=new URL(location.href).searchParams.get('firstName')
+    document.getElementById("seleccion").innerHTML=new URL(location.href).searchParams.get('seleccion')
+
+    console.log(window.location.search);
+    console.log(window.location);
+</script>
+
+</html>

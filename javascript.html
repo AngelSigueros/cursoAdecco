@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+    const persona = {
+        nombre: "Juan",
+        apellido: "Pérez",
+        edad: 30,
+        ciudad: "Madrid"
+    };
+    
+    persona.ciudad = "Barcelona";
+    persona.ocupacion = "programador";
+    
+    for (const propiedad in persona) {
+        console.log(`${propiedad}: ${persona[propiedad]}`);
+    }
+
+
+
+    const calificaciones = [85, 90, 78, 92, 88];
+    
+    const calificacionesAumentadas = calificaciones.map(calificacion => calificacion + 5);
+    
+    const calificacionesAltas = calificacionesAumentadas
+        .filter(calificacion => calificacion >= 90);
+    
+        const promedio = calificaciones.reduce((total, calificacion) => total + calificacion,
+        0) / calificaciones.length;
+
+    console.log(calificaciones);
+    console.log(calificacionesAumentadas);
+    console.log(calificacionesAltas);
+    console.log(`Promedio: ${promedio}`);
+
+</script>
+
+    
+</body>
+</html>

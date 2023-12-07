@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- El texto es el pilar central de cualquier web, es el contenido, la información que se muestra.
+    Con CSS podemos formatear el texto para modificar sus propiedades como por ejemplo: 
+    -Color
+    -Alineamiento
+    -Decoración
+    -Transformación: mayúsculas, minúsculas
+    -Espaciado: separación entre letras y líneas
+    -Sombreado 
+    - etc
+
+    Las declaraciones que permiten formatear texto tienen algo en común, todas empiezan por:
+    text-
+
+
+-->
+
+    <style>
+        /* Ejemplo modificar el color de todas las etiquetas h2 */
+        h2{
+            color:#615b5b;
+        }
+
+        /* Ejemplo alinear un texto hacia el centro */
+        h3{
+            text-align: center;
+        }
+        
+         /* Ejemplo alinear un texto hacia la derecha */
+         h5{
+             text-align: left;
+         }
+        h4{
+            text-align: right;
+        }
+        #enlace-custom{
+            text-decoration: none; /* Elimina el subrayado */
+        }
+
+         /* Ejemplo decorar texto con subrayado superior */
+        h5{
+            text-decoration: dashed;
+        }
+
+        /* Ejemplo transformar el texto todas las letras a mayúsculas */
+        #parrafo1{
+            text-transform: uppercase;
+        }
+         /* Ejemplo transformar texto a mayúscula la primera letra de todas las palabras */
+        #parrafo2{
+            text-transform: capitalize;
+        }
+        /* Ejemplo indentar la primera línea de un texto, en español se conoce como sangría */
+        #parrafo3{
+            text-indent: 40px;
+        }
+        /* Ejemplo aumentar el espacio entre las letras */
+        #parrafo4{
+            letter-spacing: 3px;
+        }
+        /* Ejemplo aumentar el espacio entre líneas */
+        #parrafo5{
+            line-height: 1;
+        }
+        /* Ejemplo aumentar el espacio entre palabras */
+        #parrafo6{
+            word-spacing: 100px;
+        }
+        /* Ejemplo aplicar un sombreado a un texto */
+        #main-title{
+            text-shadow: -2px -2px 5px rgb(0, 128, 117);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Ejemplos color -->
+    <h1>Listado de productos</h1>
+    <h2>Productos electrónicos</h2>
+
+    <!-- Ejemplos alineamiento -->
+    <h3>Texto centrado</h3>
+    <h4>Texto alineado a la derecha</h4>
+
+    <!-- Ejemplos decoración:
+    Se utiliza principalmente para eliminar el subrayado de los enlaces -->
+    <a href="#">Enlace normal</a>
+    <a id="enlace-custom"  class="clase1" href="https://www.google.es">Enlace a Google</a>
+    <h5>Ejemplo título overline</h5>
+    
+    <!-- Ejemplos de transformación de las letras: -->
+    <p id="parrafo1">Ejemplo de texto transformado a mayúsculas.</p>
+    <p id="parrafo2">texto originalmente en minúscula y con css logramos que la primera letra
+        de cada palabra sea mayúscula.
+    </p>
+
+    <!-- Ejemplo de indentación, se indenta la primera línea de un párrafo -->
+    <p id="parrafo3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt consequatur fuga laudantium placeat repellat excepturi animi facilis quidem earum totam doloribus, aut praesentium hic illo, ad quasi vero ea!
+    </p>
+
+    <!-- Ejemplo de separación, espaciado entre letras. 
+    Se utiliza especialmente para separar letras en títulos grandes -->
+    <p id="parrafo4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt consequatur fuga laudantium placeat repellat excepturi animi facilis quidem earum totam doloribus, aut praesentium hic illo, ad quasi vero ea!
+    </p>
+
+    <!-- Ejemplo separación entre líneas -->
+    <p id="parrafo5">
+       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis vitae id quam facere similique excepturi, repellendus eveniet assumenda, saepe ipsam, quaerat totam et non qui? Cumque non pariatur magni nesciunt quaerat nostrum minus perspiciatis! Natus quis explicabo aspernatur id voluptates laborum repellendus deserunt suscipit excepturi, ducimus nisi pariatur inventore esse, neque adipisci consequuntur error. Consectetur repellendus pariatur, rem odit possimus ipsa nostrum voluptatem officia magni dignissimos, fugit tempore molestiae distinctio inventore quidem perspiciatis culpa eligendi, iusto quae beatae? Aspernatur, provident ut illo nulla quasi porro nihil. Quis voluptate odit esse assumenda fugiat non possimus amet? Harum delectus, et vel assumenda nisi esse ea, labore deleniti, dolor hic quis! Ullam vitae aperiam consequuntur in aut optio suscipit, quisquam delectus dolores sapiente doloremque aliquid quae assumenda? Dicta enim id incidunt quod amet quos aliquid, unde ipsam voluptas totam, nisi in omnis repellat eum fuga blanditiis. Eius adipisci quia placeat qui voluptas cupiditate minus deleniti, accusamus eligendi amet eveniet animi quasi assumenda libero neque reprehenderit doloremque asperiores quidem vel quibusdam officiis labore omnis beatae. Voluptate incidunt accusantium ducimus doloribus amet sit consequuntur, sint hic illum reiciendis ab provident culpa, nesciunt saepe, nulla repellat. Cumque quibusdam a error possimus corrupti fugit voluptatibus quidem dolores!
+    </p>
+
+    <!-- Ejemplo de separación entre palabras -->
+    <p id="parrafo6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nesciunt consequatur fuga laudantium placeat repellat excepturi animi facilis quidem earum totam doloribus, aut praesentium hic illo, ad quasi vero ea!
+    </p>
+
+    <!-- Ejemplo aplicar un sombreado a un texto -->
+    <h1 id="main-title">Ejemplo título con sombreado</h1>
+
+
+</body>
+</html>

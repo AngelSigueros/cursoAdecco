@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Existen múltiples formas de representar colores en css, 
+
+    1 - Por nombre
+    Ver lista completa de colores aquí: https://www.w3.org/TR/css-color-3/#svg-color
+    
+    2 -   RGB
+    El formato RGB define la intensidad de los siguientes colores en una escala de 0 a 255: 
+    
+    Formato: rgb(red, green, blue)
+    
+    Ejemplo:
+    rgb(255,0,0)
+    
+    RGBA
+    
+    Se trata de una extensión de RGB con canal alfa, lo que permite especificar la opacidad de un color.
+    
+    rgba(red, green, blue, alpha)
+    
+    
+    Jugamos con la opacidad de los colores para representar diferentes aspectos en la web, 
+    como por ejemplo elementos como botones que están deshabilitados se les suele aplicar una opacidad menor,
+    lo que da una sensación de que trasparenta
+    
+    3 - Hexadecimal
+    
+    Formato: #rrggbb donde rr (red), gg (green), bb (blue) son valores hexadecimales entre 00 y ff (equivalente a valores decimales de 0 a 255)
+    
+    Ejemplo:
+    
+    Blanco: #ffffff
+    Negro: #000000
+    
+    Rojo: #ff0000
+    Azul: #0000ff
+    Verde: #00ff00
+    
+    4 - HSL 
+    Hue, Saturation, Lightness equivale a Matiz, Saturación y Luminosidad/Claridad
+    
+    Hue es un grado de 0 a 360 en el que: 
+    0 equivale a rojo
+    120 equivale a verde
+    240 equivale a azul
+    
+    Saturation es un porcentaje donde::
+    0% equivale a gris 
+    100% equivale al color sin tonos grises
+    
+    Lightness es un porcentaje donde:
+    0% es negro
+    50% es 
+    100% es blanco -->
+
+    <style>
+        /* Ejemplos color por nombre */
+        #parrafo1{
+           color:deeppink;
+        }
+
+        #parrafo2{
+            color:darkred;
+        }
+   
+        /* Ejemplos color por RGB */
+        #parrafo3{
+            color:rgb(255, 0, 0);
+        }
+        #parrafo4{
+            color:rgb(0, 255, 0);
+        }
+        #parrafo5{
+            color:rgb(0, 0, 255);
+        }
+
+        /* Ejemplos color por HEX */
+        #parrafo6{
+            color:#ff0000;
+        }
+        #parrafo7{
+            color:#00ff00;
+        }
+        #parrafo8{
+            color:#0000ff;
+        }
+        #parrafo9{
+            color:#ea00ff;
+        }
+
+        /* Ejemplos color por HSL */
+        #parrafo10{
+            color:hsl(0, 100%, 50%);
+        }
+        #parrafo11{
+            color:hsl(120, 100%, 50%);
+        }
+        #parrafo12{
+            color:hsl(240, 100%, 50%);
+        }
+        #parrafo13{
+            color:hsl(295, 100%, 50%);
+        }
+
+        #parrafo0{
+            color:darkviolet;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Ejemplo color por nombre</h2>
+    <p id="parrafo0">Hola desde párrafo</p>
+    <p id="parrafo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p id="parrafo2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+    <hr>
+    <h2>Ejemplo color por RGB</h2>
+    <p id="parrafo3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p id="parrafo4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p id="parrafo5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    
+    <hr>
+    <h2>Ejemplo color por HEX</h2>
+    <p id="parrafo6">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p id="parrafo7">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p id="parrafo8">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p id="parrafo9">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+    <hr>
+    <h2>Ejemplo color por HSL</h2>
+    <p id="parrafo10">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p id="parrafo11">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p id="parrafo12">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p id="parrafo13">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+
+</body>
+</html>

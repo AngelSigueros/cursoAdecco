@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- El concepto 'box model' o modelo de caja se utiliza cuando hablamos de diseños y layouts, 
+    todos los elementos HTML son considerados cajas. Todos los elementos HTML están compuestos por: 
+
+    1 - Contenido
+    2 - Padding
+    3 - Border
+    4 - Margin
+
+    Si abrimos la consola del navegador e inspeccionamos cualquier elemento, dentro de la pestaña 
+    Inspector a la derecha tenemos otro panel donde se encuentra la pestaña Layout (Inglés) o Disposición (Español)
+    en ella podemos observar la estructura Model Box de cualquier elemento. -->
+
+    <style>
+
+        element {
+            padding-bottom: 5px;
+            padding-right: 5px;
+            border-top-width: 2px;
+            border-top-style: solid;
+            padding-left: 5px;
+            padding-top: 5px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-right-style: solid;
+            border-right-width: 2px;
+            border-left-width: 2px;
+            border-left-style: solid;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        /*
+         1- contenido
+         2- padding
+         3- border
+         4- margin
+        */
+        article{
+            width:400px;
+            padding:50px;
+            border: 5px solid yellow;
+            margin-left:50px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Nota: abrir la consola de navegador y observar el Modelo de caja del elemento article -->
+    <h2>Titular</h2>
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, doloribus explicabo totam, eaque autem reprehenderit voluptate rem praesentium voluptates iusto soluta odit voluptatibus delectus enim ab tenetur sunt dicta quod?</p>
+    </article>
+
+</body>
+</html>
