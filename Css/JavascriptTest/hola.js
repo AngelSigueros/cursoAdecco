@@ -4,19 +4,6 @@ function mostrar() {
 
     let valor = "  Hola como estas? Bien, gracias!  ";
 
-    myArray[] = null;
-
-    for (let i=0; i < myArray.length; i++){}
-
-    myArray.push
-    myA
-
-    foreach (var element : myArray){}
-
-    for (i < myArray.length; i++) {}
-
-    for (i = 0; i <= miMatriz.longitud;){}
-
 /*
     String functions
 
