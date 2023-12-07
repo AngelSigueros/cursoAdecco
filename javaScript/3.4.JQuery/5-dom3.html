@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <div id="mainDiv">
+        <span>Buenos días 1</span>
+    </div>
+
+    <hr>
+
+    <div id="mainDiv2">
+        <span>Buenos días 2</span>
+    </div>
+
+    <hr>
+
+    <div id="mainDiv3">
+        <span>Buenos días 3</span>
+    </div>
+
+    <hr>
+
+    <div id="mainDiv4">
+        <span>Buenos días 4</span>
+    </div>
+
+
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <!-- JQuery utiliza la sintaxis de selectores CSS para localizar elementos -->
+
+    <script>
+        $(function () {
+
+            /* 3. AÑADIR NUEVOS ELEMENTOS 
+
+                
+                prepend() Añade contenido al comienzo del selemento seleccionado
+                append() Añade contenido al final del selemento seleccionado
+
+                after() Añade contenido después del selemento seleccionado
+                before() Añade contenido antes del selemento seleccionado
+            */
+
+            // append y preprend añaden el nuevo contenido al comienzo y al final pero dentro del elemento seleccionado
+            $("#mainDiv").prepend("Nuevo texto prepend()"); // comienzo
+            $("#mainDiv").append("Nuevo texto append()"); // final
+
+            // before y after añaden el nuevo contenido antes y después, fuera del elemento seleccionado
+            $("#mainDiv2").before("Nuevo texto before()"); // antes
+            $("#mainDiv2").after("Nuevo texto after()"); // después
+
+            // before y after permiten añadir más de un elemento a la vez
+            $("#mainDiv3").before("Nuevo texto before() 1", "Nuevo texto before() 2"); // antes
+            $("#mainDiv3").after("Nuevo texto after() 1", "Nuevo texto after() 2", "Elemento3"); // después
+
+            // Podemos crear elementos con JavaScript DOM y añadirlos con JQuery
+            var nuevoElemento1 = document.createElement("p");
+            nuevoElemento1.innerText = "Texto nuevo párrafo";
+
+            $("#mainDiv4").after(nuevoElemento1);
+
+        }); 
+    </script>
+
+</body>
+
+</html>

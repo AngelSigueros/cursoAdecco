@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- En HTML existe una lista de eventos que se producen cuando se interactúa con la web: 
+    https://developer.mozilla.org/en-US/docs/Web/Events
+
+    Algunos de los eventos más comunes:
+    onchange
+    onclick
+    onmouseover
+    onmouseout
+    onkeydown
+    onload -->
+
+    <script>
+
+        function carChange(){
+            var selectedCar = document.getElementById("carSelector").value;
+            console.log("Hi. Selected car is: " + selectedCar)
+        }
+    </script>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+
+    <h1>Ejemplo de evento onchange en elemento select de un formulario</h1>
+
+
+    <!-- Autor -->
+    <form>
+
+        <select  class="form-select" onchange="console.log('Que pasa')">
+            <option value="1">Dell</option>
+            <option value="2">MSI</option>
+            <option value="3">ASUS</option>
+        </select>
+
+        <select id="carSelector" class="form-select" onchange="carChange()">
+            <option selected>Seleccionar coche</option>
+            <option value="1">Volvo</option>
+            <option value="2">Ford</option>
+            <option value="3">Toyota</option>
+          </select>
+
+    </form>
+
+    
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+</body>
+</html>

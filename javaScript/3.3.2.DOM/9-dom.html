@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        El Document Objet Model (DOM) representa un árbol de objetos en HTML. 
+        Haciendo uso del DOM JavaScript puede: 
+        - Cambiar los elementos HTML de la página
+        - Cambiar los atributos de los elementos HTML de la página
+        - Cambiar los estilos CSS de los elementos HTML de la página
+        - Eliminar elementos / atributos HTML en la página
+        - Añadir nuevos elementos y atributos
+        - Reaccionar a posibles eventos: onclick, onchange....
+        - Crear nuevo eventos en la página
+    -->
+</head>
+<body>
+    
+    <h1 id="title1"><span>Pruebas con HTML DOM</span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, in. 1</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, in. 2</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, in. 3</p>
+
+    <div class="test">
+        Texto prueba
+    </div>
+
+    <div class="test">
+        Texto prueba
+    </div>
+
+
+    <h2 id="title2">Título original</h1>
+
+    <div id="empty1">
+
+    </div>
+
+    <footer id="main-footer">
+        &copy; 2021
+    </footer>
+
+
+    <!-- CÓDIGO JAVASCRIPT -->
+    <script>
+
+
+        // 1 - HTML DOM Finding elements: getElementById
+        console.log(document.getElementById("title1"));
+        console.log(document.getElementById("title1").textContent);
+        console.log(document.getElementById("title1").innerHTML);
+
+
+        // 1 - HTML DOM Finding elements: getElementsByTagName
+        console.log(document.getElementsByTagName("p"));
+
+        // 1 - HTML DOM Finding elements: getElementsByClassName
+        console.log(document.getElementsByClassName("test"));
+
+        // 2 - Cambiar elementos
+        document.getElementById("title2").innerHTML = "Título 2 modificado desde JS";
+        document.getElementById("title2").title = "Atributo title editado desde JS";
+        document.getElementById("title2").style.color = "blue";
+
+
+        // 3 - Añadir elementos
+
+            // primero se crea el elemento
+        var par1 = document.createElement("p");
+            // después se le agrega contenido, modifica sus propiedades etc
+        par1.innerHTML = "Párrafo creado desde JavaScript";
+
+            // para que el elemento sea visible lo añadimos al HTML existente, por ejemplo como hijo de algún div
+        document.getElementById("empty1").appendChild(par1);
+
+        // 4 - Eliminar elementos
+            // obtenemos el elemento
+        var footer = document.getElementById("main-footer");
+
+            // utilizamos el método removeChild, se debe ejecutar sobre el elemento padre al que queremos borrar
+        footer.parentNode.removeChild(footer);
+
+        // Con document.write podemos escribir contenido html a continuación del último
+        // elemento que haya en el body
+        document.write("<h3>Hello World!</h3><p>Bye!</p>");
+    </script>
+</body>
+</html>

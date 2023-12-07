@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .clase1{
+            color: red;
+        }
+        .clase2{
+            color: green;
+        }
+        .clase3{
+            color:blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mainDiv1">
+        <span>Buenos días 1</span>
+    </div>
+
+    <hr>
+
+    <div id="mainDiv2" class="clase2">
+        <span>Buenos días 2</span>
+    </div>
+
+    <hr>
+
+    <div id="mainDiv3" class="clase3">
+        <span>Buenos días 3</span>
+    </div>
+
+    <hr>
+
+    <div id="mainDiv4" >
+        <span>Buenos días 4</span>
+    </div>
+
+    <hr>
+
+    <div id="mainDiv5">
+        <span>Buenos días 5</span>
+    </div>
+
+
+    <hr>
+
+    <div id="mainDiv6">
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, rem laborum. Distinctio corporis, maiores repudiandae consequuntur impedit ducimus deleniti enim?</span>
+    </div>
+
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <!-- JQuery utiliza la sintaxis de selectores CSS para localizar elementos -->
+
+    <script>
+        $(function () {
+
+            /* 
+             TRABAJAR CON CLASES CSS:
+             addClass() - añadir una clase css de un elemento html
+             removeClass() - quitar una clase css de un elemento html
+             toggleClass() - añade o quita la clase en función de si la tenía o no
+            */
+
+            // añadir clase css
+            $("#mainDiv1").addClass("clase1");
+
+            // quitar clase css
+            $("#mainDiv2").removeClass("clase2");
+
+            // TRABAJAR CON PROPIEDADES CSS
+            
+            // Obtener el valor de una propiedad css de un elemento
+            
+            console.log("Color del elemento con clase3: " + $(".clase3").css("color") );
+
+            // Cambiar el valor de una propiedad css de un elemento
+            $("#mainDiv4").css("color", "orange");
+
+            // Cambiar el valor de múltiples propiedades css de un elemento
+            $("#mainDiv5").css({
+                "color": "white", 
+                "background-color": "green", 
+                "font-size": "40px"
+            });
+
+            // Modificar las dimensiones de un elemento
+            $("#mainDiv6").width(100).height(300);
+
+        }); 
+    </script>
+
+</body>
+
+</html>

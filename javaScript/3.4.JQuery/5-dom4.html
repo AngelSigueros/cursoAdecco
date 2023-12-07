@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="mainDiv">
+        <span>Buenos días 1</span>
+    </div>
+
+    <hr>
+
+    <div id="mainDiv2">
+        <span>Buenos días 2</span>
+    </div>
+
+    <hr>
+
+    <div id="mainDiv3">
+        <span>Buenos días 3</span>
+    </div>
+
+    <hr>
+
+    <div id="mainDiv4">
+        <span class="main-span">Buenos días 4</span>
+        <span class="second-span">Buenos días 4</span>
+    </div>
+
+    <div id="mainDiv5">
+        <span class="main-span">Buenos días 5</span>
+        <span class="second-span">Buenos días 5</span>
+
+    </div>
+
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <!-- JQuery utiliza la sintaxis de selectores CSS para localizar elementos -->
+
+    <script>
+        $(function () {
+
+            // 4. ELIMINAR ELEMENTOS
+
+            // remove () elimina el elemento html seleccionado
+            $("#mainDiv").remove();
+
+            // empty() vacía el elemento pero no lo borra
+            $("#mainDiv2").empty();
+
+            // también podemos utilizar selectores a la hora de decidir qué elementos queremos borrar
+            $("#mainDiv4 .main-span").remove();
+
+
+        }); 
+    </script>
+
+</body>
+
+</html>

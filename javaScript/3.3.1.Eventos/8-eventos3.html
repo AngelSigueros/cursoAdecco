@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- En HTML existe una lista de eventos que se producen cuando se interactúa con la web: 
+    https://developer.mozilla.org/en-US/docs/Web/Events
+
+    Algunos de los eventos más comunes:
+    onchange
+    onclick
+    onmouseover
+    onmouseout
+    onkeydown
+    onload -->
+
+    <script>
+        function carChange(){
+            var selectedCar = document.getElementById("carSelector").value;
+            console.log("Hi. Selected car is: " + selectedCar)
+        }
+    </script>
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+
+
+
+    <form id="loginForm" action="/some-server" method="POST">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login 1</button>
+      </form>
+    
+      <hr>
+      <h2>Ejemplo de botón independiente que permite enviar el formulario desde JS</h2>
+      <button type="button" class="btn btn-primary mt-5" onclick="sendLoginForm()">Validar y guardar</button> 
+
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+    <script>
+
+        function sendLoginForm(){
+
+            var formElement = document.getElementById("loginForm");
+            // La función submit envía el formulario al servidor
+            formElement.submit();
+        }
+
+    </script>
+</body>
+</html>

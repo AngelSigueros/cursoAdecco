@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="mainTitle">Encontrar elementos html con JQuery</h1>
+
+    <p>Lorem ipsum dolor 1</p>
+    <p>Lorem ipsum dolor 2</p>
+    <p class="special">Lorem, ipsum dolor 3</p>
+    <span class="special">Ejemplo texto span</span>
+
+    <footer class="mainFooter">&copy; 2021</footer>
+    
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- JQuery utiliza la sintaxis de selectores CSS para localizar elementos -->
+
+    <script>
+        $(function(){ // esperar la carga del documento html antes de interactuar con el mismo
+
+            /* Estructura sintaxis JQuery
+            1. Utilizamos $ para utilizar las funcionalidades de JQuery
+            2. Utilizamos un selector CSS para encontrar elemento/s HTML
+            3. Utilizamos una acción para ejecutarla sobre los elementos encontrados
+
+            Ejemplo: 
+
+            $("#mainTitle").text() El metodo text() permite obtener el texto de un elemento
+            */
+
+            // Selector id 
+            document.getElementById("mainTitle") // JS Vanilla
+            $("#mainTitle") // JQuery
+
+
+
+            console.log($("#mainTitle").text());
+
+            // selector clase
+            console.log($(".mainFooter").text());
+
+            // Selector etiqueta
+            console.log($("p").text());
+
+            // obtener solo el primer párrafo de todos
+            console.log($("p:first").text());
+
+            // obtener solo el SEGUNDO párrafo de todos. El método next() nos permite acceder al siguiente elemento
+            console.log($("p:first").next().text());
+
+            console.log($("p.special").text())
+
+            // selecciona todos los elementos a la vez
+            console.log($("*").text())
+
+            // Para profundizar más se recomienda ver el listado de selectores en la doc. oficial:
+            // https://api.jquery.com/category/selectors/
+        }); 
+    </script>
+
+</body>
+
+</html>

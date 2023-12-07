@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="mainTitle">Encontrar elementos html con JQuery</h1>
+
+    <p class="mainP">Lorem ipsum dolor 1</p>
+
+    <form>
+        Nombre
+        <input id="firstName" type="text" name="first-name" placeholder="Rodrigo" value="Pepe"><br>
+
+        Apellido
+        <input type="text" name="last-name">
+    </form>
+
+    <div>
+        <span>Buenos días</span>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <a id="mainAnchor" title="Enlace al buscador Google" href="https://www.google.es">Ejemplo enlace</a>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <!-- JQuery utiliza la sintaxis de selectores CSS para localizar elementos -->
+
+    <script>
+        $(function () {
+
+            // 1. ENCONTRAR ELEMENTOS 
+            
+
+            // obtener el texto de un párrafo
+            console.log($(".mainP").text());
+
+            // obtener el valor de un input
+            console.log($("#firstName").val()); // accede al atributo value de el input seleccionado
+
+            // obtener el html de un div
+            console.log($("div").html());
+
+            // obtener el valor de un atributo de un elemento 
+            console.log($("#mainAnchor").attr("href"));
+            console.log($("#mainAnchor").attr("title"));
+
+
+        }); 
+    </script>
+
+</body>
+
+</html>

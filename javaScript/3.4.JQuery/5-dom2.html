@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="mainTitle">Encontrar elementos html con JQuery</h1>
+
+    <p class="mainP">Lorem ipsum dolor 1</p>
+
+    <form>
+        Nombre
+        <input id="firstName" type="text" name="first-name" placeholder="Rodrigo" value="Pepe"><br>
+
+        Apellido
+        <input type="text" name="last-name">
+    </form>
+
+    <div id="mainDiv">
+        <span>Buenos días</span>
+    </div>
+
+    <a id="mainAnchor" title="Enlace al buscador Google" href="https://www.google.es">Ejemplo enlace</a>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <!-- JQuery utiliza la sintaxis de selectores CSS para localizar elementos -->
+
+    <script>
+        $(function () {
+
+            // 2. MODIFICAR ELEMENTOS
+            // Los propios métodos text(), html() y val() permiten modificar su contenido
+            
+            // Modificar el texto de un párrafo
+            $(".mainP").text("Texto de párrafo modificado mediante JQuery");
+
+            // Modificar el html de un elemento
+            $("#mainDiv").html("<p>Nuevo parrafo 1</p><p>Nuevo <strong>parrafo 2</strong></p>");
+
+            // Modificar el valor de un input de un formulario
+            $("#firstName").val("Valor modificado");
+
+            // Modificar un atributo de un elemento
+            $("#mainAnchor").attr("href", "https://fundacionadecco.org/");
+            $("#mainAnchor").attr("title", "Página oficial jquery");
+
+            // Modificar más de un atributo de un elemento a la vez 
+            $("#mainAnchor").attr({
+                "href" : "https://jquery.com/",
+                "title" : "Página oficial JQuery"
+            });
+
+
+        }); 
+    </script>
+
+</body>
+
+</html>

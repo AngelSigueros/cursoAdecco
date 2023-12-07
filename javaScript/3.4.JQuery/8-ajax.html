@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <button type="button" class="btn btn-primary mt-5">Enviar datos</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="#mainDiv4">
+
+    </div>
+
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <!-- JQuery utiliza la sintaxis de selectores CSS para localizar elementos -->
+
+    <script>
+        $(function () {
+
+            /* 
+             Asynchronous JavaScript and XML (AJAX)
+             AJAX es una tecnología que permite cargar datos desde el servidor sin necesidad
+             de recargar la página html en el navegador
+
+             JQuery permite realizar peticiones HTTP haciendo uso de AJAX de una manera sencilla.
+
+             https://api.jquery.com/jquery.ajax/
+
+            */
+
+            var serverUrl1 = "http://localhost:8080/jquery";
+
+            // 1. MÉTODO load()
+            // Con el método load podemos cargar cualquier contenido: html, txt, imagen sobre un elemento del dom
+            // NOTA: para que funcione correctamente es necesario tener configurada una aplicación java que responda
+            // $("#mainDiv4").load(serverUrl1);
+
+
+            // 2. MÉTODO get() - permite recuperar datos del servidor HTTP - GET
+            $.get(serverUrl1, function (data, status) {
+                console.log("RESPUESTA GET");
+                console.log("Data: " + data + "\nStatus: " + status);
+            });
+
+
+            // 3. MÉTODO ajax() - permite enviar/recibir datos del servidor configurando el método HTTP y el tipo de dato que se envía
+            var ejemploObjeto = {
+                firstname: "Alan",
+                lastname: "Sastre"
+            }
+            $("button").click(function () {
+
+                $.ajax('http://localhost:8080/api/employees', {
+                    data : JSON.stringify(ejemploObjeto),
+                    contentType : 'application/json',
+                    type : 'POST',
+                    success: function(result){
+                        console.log("RESULTADO POST");
+                        console.log(result); // Objeto person recibido
+                    },
+                    error: function(xhr){
+                        console.log("RESULTADO POST");
+                        console.log("An error occured: " + xhr.status + " " + xhr.statusText);
+                    }
+                });
+
+
+            });
+
+
+        }); 
+    </script>
+
+</body>
+
+</html>
