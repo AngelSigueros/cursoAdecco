@@ -1,0 +1,10 @@
+insert into venta (id_venta, cliente, agente, articulo, cantidad, precio, fecha) values (48, 20, 12, 'Chilli Paste, Sambal Oelek', 6, 58, '2023-09-04');
+insert into venta (id_venta, cliente, agente, articulo, cantidad, precio, fecha) values (24, 86, 82, 'Chicken - Leg / Back Attach', 26, 14, '2023-11-23');
+insert into venta (id_venta, cliente, agente, articulo, cantidad, precio, fecha) values (25, 5, 90, 'Cake Circle, Paprus', 71, 23, '2023-09-02');
+insert into venta (id_venta, cliente, agente, articulo, cantidad, precio, fecha) values (98, 9, 19, 'Tea - Earl Grey', 67, 67, '2023-09-03');
+insert into venta (id_venta, cliente, agente, articulo, cantidad, precio, fecha) values (99, 14, 98, 'Eggwhite Frozen', 79, 12, '2023-03-15');
+insert into venta (id_venta, cliente, agente, articulo, cantidad, precio, fecha) values (100, 16, 100, 'Island Oasis - Raspberry', 87, 33, '2023-04-12');
+insert into venta (id_venta, cliente, agente, articulo, cantidad, precio, fecha) values (69, 20, 69, 'Wine - Chateau Bonnet', 55, 22, '2023-02-11');
+insert into venta (id_venta, cliente, agente, articulo, cantidad, precio, fecha) values (4, 52, 75, 'Pasta - Lasagna, Dry', 96, 70, '2022-12-17');
+insert into venta (id_venta, cliente, agente, articulo, cantidad, precio, fecha) values (43, 100, 2, 'Lobster - Live', 59, 11, '2023-07-01');
+insert into venta (id_venta, cliente, agente, articulo, cantidad, precio, fecha) values (15, 78, 84, 'Cookie Double Choco', 68, 22, '2023-08-26');

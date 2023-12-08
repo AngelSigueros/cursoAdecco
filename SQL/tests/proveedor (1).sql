@@ -1,0 +1,10 @@
+insert into proveedor (id_proveedor, tienda, empresa, propietario, telefono, direccion, dni) values (100, 64, 'Linkbridge', 'Christen', 312275905, '4700 Schiller Circle', 670619807);
+insert into proveedor (id_proveedor, tienda, empresa, propietario, telefono, direccion, dni) values (39, 56, 'Fivechat', 'Austin', 41480994, '32 Clove Terrace', 148936290);
+insert into proveedor (id_proveedor, tienda, empresa, propietario, telefono, direccion, dni) values (42, 56, 'Riffpedia', 'Simone', 803179522, '7 Kipling Drive', 591092671);
+insert into proveedor (id_proveedor, tienda, empresa, propietario, telefono, direccion, dni) values (30, 14, 'Pixoboo', 'Gerrie', 399245274, '61936 Lakewood Hill', 503943221);
+insert into proveedor (id_proveedor, tienda, empresa, propietario, telefono, direccion, dni) values (61, 88, 'Rhynyx', 'Alon', 767748866, '487 Erie Circle', 302333028);
+insert into proveedor (id_proveedor, tienda, empresa, propietario, telefono, direccion, dni) values (12, 5, 'Skalith', 'Vasilis', 14290770, '044 Oriole Street', 469348021);
+insert into proveedor (id_proveedor, tienda, empresa, propietario, telefono, direccion, dni) values (34, 31, 'Zoombeat', 'Erv', 397667404, '45 Marquette Trail', 780948977);
+insert into proveedor (id_proveedor, tienda, empresa, propietario, telefono, direccion, dni) values (30, 50, 'Quinu', 'Ellswerth', 464229246, '2 Tony Crossing', 33443391);
+insert into proveedor (id_proveedor, tienda, empresa, propietario, telefono, direccion, dni) values (11, 12, 'Gabspot', 'Donalt', 659991888, '8 Sachs Street', 166804905);
+insert into proveedor (id_proveedor, tienda, empresa, propietario, telefono, direccion, dni) values (78, 29, 'Photospace', 'Robby', 860604451, '93389 Meadow Ridge Point', 312987221);

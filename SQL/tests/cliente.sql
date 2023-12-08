@@ -1,0 +1,10 @@
+insert into cliente (id_cliente, tienda, sempnpart, nombreemp, nombre, apellidos, telefono, direccion, dni_cif) values (5, 1, 98, 'Flashdog', 'Leslie', 'Shearn', 278530710, '70865 Sauthoff Way', 622945162);
+insert into cliente (id_cliente, tienda, sempnpart, nombreemp, nombre, apellidos, telefono, direccion, dni_cif) values (24, 91, 84, 'Realfire', 'Broddie', 'Spadari', 659045333, '64718 Southridge Hill', 556873888);
+insert into cliente (id_cliente, tienda, sempnpart, nombreemp, nombre, apellidos, telefono, direccion, dni_cif) values (20, 62, 22, 'Demizz', 'Shirl', 'Donohue', 81151421, '25832 Lakewood Gardens Center', 518362559);
+insert into cliente (id_cliente, tienda, sempnpart, nombreemp, nombre, apellidos, telefono, direccion, dni_cif) values (6, 15, 100, 'Yoveo', 'Caresa', 'Ahmed', 257168950, '10650 Blackbird Road', 312405265);
+insert into cliente (id_cliente, tienda, sempnpart, nombreemp, nombre, apellidos, telefono, direccion, dni_cif) values (81, 74, 10, 'Tekfly', 'Beverly', 'Willcox', 83260958, '2195 Springview Junction', 290531771);
+insert into cliente (id_cliente, tienda, sempnpart, nombreemp, nombre, apellidos, telefono, direccion, dni_cif) values (40, 40, 79, 'Dabfeed', 'Nikki', 'Iiannone', 909407149, '03585 Haas Trail', 116277759);
+insert into cliente (id_cliente, tienda, sempnpart, nombreemp, nombre, apellidos, telefono, direccion, dni_cif) values (44, 50, 24, 'Topicshots', 'Catha', 'Calles', 621247018, '34 Elka Center', 684789856);
+insert into cliente (id_cliente, tienda, sempnpart, nombreemp, nombre, apellidos, telefono, direccion, dni_cif) values (77, 24, 72, 'Dabfeed', 'Melantha', 'Staggs', 241920030, '5753 Crest Line Lane', 280408302);
+insert into cliente (id_cliente, tienda, sempnpart, nombreemp, nombre, apellidos, telefono, direccion, dni_cif) values (71, 19, 59, 'Abatz', 'Teodoro', 'Grzegorek', 792763938, '2574 Bunker Hill Park', 700235438);
+insert into cliente (id_cliente, tienda, sempnpart, nombreemp, nombre, apellidos, telefono, direccion, dni_cif) values (28, 86, 82, 'Fivechat', 'Hailee', 'Flament', 662547832, '3636 Linden Park', 129063324);
